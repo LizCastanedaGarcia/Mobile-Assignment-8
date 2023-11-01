@@ -1,0 +1,192 @@
+/************************************************************************************************************************************************
+************************************************************************************************************************************************
+************************************************************************
+
+Filename: webform.css
+Author: Lizbeth Castaneda
+Copyright: 2023 - All rights reserved
+
+************************************************************************************************************************************************
+************************************************************************************************************************************************
+************************************************************************/
+
+
+/**********************************************************************
+**********************************************************************
+
+==================
+Table of Contents
+==================
+1. HTML Body Styles
+2. Heading Styles
+3. Main Body Styles
+4. Footer Styles
+
+
+
+**********************************************************************
+**********************************************************************/
+
+/****************************  MAIN STYLES  ***********************************/
+
+/**********************
+1. HTML Body Styles
+**********************/
+
+body {
+    background-color: rgba(22, 234, 212, 0.85);
+    min-height: 100vh;
+}
+
+/**********************
+2. Heading Styles
+**********************/
+
+h1 {
+    font-size: 3em;
+    font-family: 'Work Sans', sans-serif;
+    color: gray;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+/**********************
+3. Main Body Styles
+**********************/
+
+section {
+    margin: 3em 0em;
+}
+
+button {
+    width: 12em;
+    height: 3.5em;
+    border-radius: 100px;
+    border: 0;
+    background-color: gray;
+    background-size: 200%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-radius: 30%;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    width: 10%;
+    height: 3.5em;
+    align-self: center;
+    border-radius: 100px;
+    border: 0;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+}
+
+.form-groupchkbx {
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+input, textarea {
+    margin: 15px 0px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 0;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+
+/**********************
+4. Footer Styles
+**********************/
+
+footer {
+    height:48px;  
+    background-color: rgba(37, 69, 231, 0.3)
+}
+
+footer p {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 6px 0px;
+}
+
+/****************************  MEDIA STYLES - 600px  ***********************************/
+@media screen and (max-width: 600px) {
+    body {
+        background-color: aquamarine;
+    }
+    .form-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .form-container label {
+        flex: 1;
+        margin-right: 10px;
+        font-size: 1.8em;
+    }
+    input[type="text"], input[type+"email"],input[type="tel"], textarea {
+        flex:2;
+    }
+
+}
+/****************************** MEDIA STYLES - 601 PX and Below **********************/
+@media screen and (max-width: 601px) {
+    body {
+        background-color: burlywood;
+    }
+    .form-container label {
+        font-size: 1.5em;
+    }
+    input[type="text"],input[type="email"],input[type="tel"],textarea {
+        font-size: 1.1em;
+    }
+    footer p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
